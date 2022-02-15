@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
-import './Gallery.css';
+import './Home.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 
-const Gallery = ({photos, loading}) => {
+const Home = ({photos, loading}) => {
     useEffect(() => {
         AOS.init({
             duration : 1000,
@@ -13,12 +13,12 @@ const Gallery = ({photos, loading}) => {
 
 
   return (
-    <div className='gallery'>
+    <div className='home'>
        
       {  !loading ? 
       photos.map(photo=>
         (
-            <div className='gallery-content'>
+            <div className='home-content'>
        
         <img
          src={photo.urls.regular}
@@ -42,4 +42,4 @@ const Gallery = ({photos, loading}) => {
   )
 }
 
-export default Gallery
+export default Home
