@@ -18,14 +18,14 @@
  justify-content: center;
 }
 .image-text{
-    margin-top: -100px;
+    padding: 25px;
     width: 100%;
-    background-color: #999;
-    opacity: 0.5;   
+    background-color: #fff;
+   
 
 }
 .image-text p{
-    color: white;
+    color: #000;
     font-size: 16px;
     font-weight: 100;
 }

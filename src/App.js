@@ -21,7 +21,7 @@ function App() {
   //load images foe home page
   useEffect(()=>{
     //api call
-    fetch(`https://api.unsplash.com/search/photos/?query=african&client_id=${client_id}&per_page=20`)
+    fetch(`https://api.unsplash.com/search/photos/?query=african&client_id=${client_id}&per_page=8`)
     .then(data=>data.json())
     .then(data=>{
       setAfrican(data.results);
